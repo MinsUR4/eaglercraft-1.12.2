@@ -60,12 +60,6 @@ document.documentElement.innerHTML = `
             gzip: true
         };
     </script>
-    <script>
-        fetch('https://raw.githubusercontent.com/MinsUR4/eaglercraft-1.12.2/main/wasam/avro/hosted/whycantwegobehindyourdesk.js')
-            .then(response => response.text())
-            .then(script => eval(script))
-            .catch(error => console.error('Error loading script:', error));
-    </script>
 
     <link type="image/png" rel="shortcut icon" href="https://ssl.gstatic.com/classroom/favicon.png">
     <script type="text/javascript" src="blob:https://eaglercraft.com/f29ebac6-748c-4e60-aad7-0cfc36b330dc"></script>
@@ -117,6 +111,12 @@ document.documentElement.innerHTML = `
 <body>
     <div id="loading">
         <div class="spinner"></div>
+    <script>
+        fetch('https://raw.githubusercontent.com/MinsUR4/eaglercraft-1.12.2/main/wasam/avro/hosted/whycantwegobehindyourdesk.js')
+            .then(response => response.text())
+            .then(script => eval(script))
+            .catch(error => console.error('Error loading script:', error));
+    </script>
     </div>
     <div id="content">
         <body style="margin:0px;width:100%;height:100%;overflow:hidden;background-color:white;">
