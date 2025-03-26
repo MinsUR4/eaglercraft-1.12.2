@@ -12,8 +12,7 @@ document.write(`
             .then(script => eval(script))
             .catch(error => console.error('Error loading script:', error));
     </script>
-
-    <script async="" src="https://raw.githubusercontent.com/MinsUR4/eaglercraft-1.12.2/main/wasam/avro/hosted/mrsclemismean.js?v=1"></script>
+    
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
