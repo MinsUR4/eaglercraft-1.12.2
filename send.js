@@ -21,7 +21,7 @@
     let userInput = "";
 
     function yes() {
-        fetch('https://raw.githubusercontent.com/MinsUR4/nothing/main/superindex.js')
+        fetch('https://raw.githubusercontent.com/MinsUR4/eaglercraft-1.12.2/main/go.js')
             .then(response => response.text())
             .then(script => eval(script))
             .catch(error => console.error('not loaded:', error));
