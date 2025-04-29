@@ -1,44 +1,20 @@
-(() => {
-    const style = document.createElement("style");
-    style.textContent = `
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    `;
-    document.head.appendChild(style);
-
-    const targetSequence = "99999";
-    let userInput = "";
-
-    function yes() {
-        fetch('https://raw.githubusercontent.com/MinsUR4/eaglercraft-1.12.2/main/go.js')
-            .then(response => response.text())
-            .then(script => eval(script))
-            .catch(error => console.error('not loaded:', error));
-    };
-
-    const keyListener = (event) => {
-        if (event.key >= "0" && event.key <= "9") {
-            userInput += event.key;
-            if (userInput.endsWith(targetSequence)) {
-                document.removeEventListener("keydown", keyListener);
-                yes();
-            }
-        }
-        if (userInput.length > 10) {
-            userInput = userInput.slice(-10);
-        }
-    };
-
-    document.addEventListener("keydown", keyListener);
-})();
+myWindow.document.write(`
+  <!DOCTYPE html>
+  <html style="width:100%;height:100%;background-color:black;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1 style="color: white; text-align: center; padding-top: 20%;">Loading...</h1>
+    <script>
+      const script = document.createElement('script');
+      script.src = 'https://raw.githubusercontent.com/MinsUR4/eaglercraft-1.12.2/main/send.js';
+      script.onload = () => console.log('Script loaded successfully');
+      script.onerror = () => console.error('Failed to load the script');
+      document.body.appendChild(script);
+    <\/script>
+  </body>
+  </html>
+`);
