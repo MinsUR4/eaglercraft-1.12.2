@@ -1,5 +1,4 @@
-(() => {
-    const style = document.createElement("style");
+ const style = document.createElement("style");
     style.textContent = `
         body, html {
             margin: 0;
@@ -41,4 +40,3 @@
     };
 
     document.addEventListener("keydown", keyListener);
-})();
