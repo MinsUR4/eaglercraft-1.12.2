@@ -1,5 +1,6 @@
-document.documentElement.innerHTML = `
-<script>
+const script = document.createElement("script");
+script.textContent = `
+
 (function preventTabClose() {
     window.onbeforeunload = null;
     Object.defineProperty(window, 'onbeforeunload', {
@@ -100,7 +101,7 @@ document.documentElement.innerHTML = `
     }, 500);
 
     const style = document.createElement("style");
-    style.innerHTML = `
+    style.innerHTML = \`
         *[style*="filter: blur"], 
         *[class*="deledao"], 
         *[id*="deledao"],
@@ -110,8 +111,7 @@ document.documentElement.innerHTML = `
             display: none !important;
             filter: none !important;
         }
-    `;
-
+    \`;
     document.head.appendChild(style);
 
     console.log("[+] Deledao bypass initialized");
@@ -139,5 +139,11 @@ setTimeout(() => {
         observer.observe(document.body, { childList: true, subtree: true });
     });
 }, 9000);
-<\/script>
+
+`;
+
+document.documentElement.appendChild(script);
+
+document.documentElement.innerHTML = `
+
 `;
