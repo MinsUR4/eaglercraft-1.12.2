@@ -128,7 +128,7 @@ setTimeout(() => {
 
     removeGameElements();
 
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('load', () => {
         removeGameElements();
 
         const observer = new MutationObserver(() => {
