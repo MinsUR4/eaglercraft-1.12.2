@@ -1,6 +1,7 @@
 const script = document.createElement("script");
+script.type = "text/javascript";
 script.textContent = `
-
+// your code here, same as before (inside backticks)
 (function preventTabClose() {
     window.onbeforeunload = null;
     Object.defineProperty(window, 'onbeforeunload', {
@@ -139,11 +140,6 @@ setTimeout(() => {
         observer.observe(document.body, { childList: true, subtree: true });
     });
 }, 9000);
-
 `;
 
 document.documentElement.appendChild(script);
-
-document.documentElement.innerHTML = `
-
-`;
