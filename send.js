@@ -100,7 +100,7 @@ document.documentElement.innerHTML = `
     }, 500);
 
     const style = document.createElement("style");
-    style.innerHTML = \`
+    style.innerHTML = `
         *[style*="filter: blur"], 
         *[class*="deledao"], 
         *[id*="deledao"],
@@ -110,7 +110,8 @@ document.documentElement.innerHTML = `
             display: none !important;
             filter: none !important;
         }
-    \`;
+    `;
+
     document.head.appendChild(style);
 
     console.log("[+] Deledao bypass initialized");
