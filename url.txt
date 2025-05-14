@@ -1,11 +1,1 @@
-{
-  "relays": [
-    { "addr": "wss://relay.deev.is/", "comment": "lax1dude relay #1" },
-    { "addr": "wss://relay.lax1dude.net/", "comment": "lax1dude relay #2" },
-    { "addr": "wss://relay.shhnowisnottheti.me/", "comment": "ayunami relay #1" }
-  ],
-  "servers": [
-    { "addr": "wss://ntsc-correspondence-usc-chuck.trycloudflare.com", "name": "§r §r §r §r §4§lRed" }
-  ]
-}
- 
+wss://ntsc-correspondence-usc-chuck.trycloudflare.com
