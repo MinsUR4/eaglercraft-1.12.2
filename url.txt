@@ -1,1 +1,1 @@
-wss://old-scout-intervention-shannon.trycloudflare.com
+wss://nvidia-peas-warranties-constraints.trycloudflare.com
